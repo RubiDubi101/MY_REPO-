@@ -1,0 +1,349 @@
+    1  ls 
+    2  cd Downloads/
+    3  ls
+    4  mv net_check.sh netchaos.sh /home/ruby/
+    5  l
+    6  cd
+    7  ls
+    8  mkdir nch
+    9  mv net_check.sh netchaos.sh nch/
+   10  ls
+   11  cd nch/
+   12  ls
+   13  chmod +x net_check.sh netchaos.sh 
+   14  l
+   15  clea
+   16  ls
+   17  ./netchaos.sh 
+   18  sudo ./netchaos.sh 
+   19  ./net_check.sh 
+   20  ip link show dev enp0s3 .
+   21  ip link show dev enp0s3 
+   22  sudo ip link set enp0s3 mtu 1500
+   23  ./net_check.sh 
+   24  clear
+   25  ip neigh show 
+   26  ip neigh
+   27  sudo ip neigh del 10.0.2.2 dev enp0s3 
+   28  ping -c 1 10.0.2.2
+   29  ./net_check.sh 
+   30  clear
+   31  sysctl net.ipv4.conf.all.rp_filter 
+   32  sudo sysctl net.ipv4.conf.all.rp_filter=2 
+   33  ./net_check.sh 
+   34  cd 
+   35  cd /etc/sysctl.d/
+   36  ls
+   37  rm -f 99-chaos-forward.conf 99-chaos-rpfilter.conf 
+   38  sudo rm -f 99-chaos-forward.conf 99-chaos-rpfilter.conf 
+   39  clear
+   40  cd
+   41  cd nch/
+   42  ls
+   43  ./net_check.sh 
+   44  tc qdisc show dev enp0s3 
+   45  sudo tc qdisc delete dev enp0s3 root 
+   46  ./net_check.sh 
+   47  cd
+   48  sudo sysctl -w net.1pv4.ip_forward=1
+   49  cd /etc/
+   50  ls
+   51  cd
+   52  sysctl net.ipv4.ip_forward
+   53  sudo sysctl net.ipv4.ip_forward=1
+   54  cd nch/
+   55  ls
+   56  ./net_check.sh 
+   57  ping 127.0.0.1
+   58  ip link show lo 
+   59  sudo ip link set lo up 
+   60  ./net_check.sh 
+   61  cd
+   62  cat /etc/resolv.conf 
+   63  nano /etc/resolv.conf 
+   64  sudo nano /etc/resolv.conf 
+   65  cd nch/
+   66  ./net_check.sh 
+   67  history 
+   68  cd
+   69  ls
+   70  mkdir chaos_11111
+   71  mv chaos.sh ubuntu_check\ 1.sh chaos_11111/
+   72  ls
+   73  cd chaos_11111/
+   74  ls
+   75  cd
+   76  ls
+   77  mkdir fix_system_quests
+   78  ls
+   79  cd
+   80  sleep
+   81  sleep -100
+   82  sleep --help
+   83  sleep -200
+   84  sleep -2
+   85  sleep --20
+   86  cd 
+   87  cd CTF/
+   88  nano checklabnav.sh 
+   89  curl -fsS https://dl.brave.com/install.sh | sh
+   90  sudo apt install curl -y
+   91  curl -fsS https://dl.brave.com/install.sh | sh
+   92  brave-browser --help
+   93  brave-browser 
+   94  ls
+   95  cd Downloads/
+   96  ls
+   97  mv labnav.sh 
+   98  mv labnav.sh /home/ruby/
+   99  cd
+  100  chmod +x labnav.sh 
+  101  bash labnav.sh 
+  102  cd /tmp/nav_lab/
+  103  ls
+  104  cat welcome.txt 
+  105  cd
+  106  bash labnav.sh 
+  107  ls
+  108  cd Downloads/
+  109  ls
+  110  mv checklabnav.sh /home/ruby/
+  111  cd
+  112  chmod +x checklabnav.sh 
+  113  bash checklabnav.sh 
+  114  bash checklabnav.sh 1 FLAG{lvl01_cat_start}
+  115  cd /tmp/nav_lab/
+  116  ls
+  117  ll
+  118  cat .secret_notes 
+  119  cd
+  120  mv checklabnav.sh /tmp/nav_lab/
+  121  cd /tmp/nav_lab/
+  122  bash checklabnav.sh 2 FLAG{lvl02_hidden_dotfile}
+  123  cd archive/2026/
+  124  ls
+  125  echo report.txt
+  126  cat report.txt 
+  127  cd ..
+  128  bash checklabnav.sh 2 FLAG{lvl03_deep_subfolder
+  129  bash checklabnav.sh 2 FLAG{lvl03_deep_subfolder}
+  130  bash checklabnav.sh 3 FLAG{lvl03_deep_subfolder}
+  131  cd chamber/room_a/sub/
+  132  cd ../../room_b/
+  133  ls 
+  134  cat key.txt 
+  135  cd ~
+  136  cd /tmp/nav_lab/
+  137  bash checklabnav.sh 4 FLAG{lvl04_parent_dotdot}
+  138  ls
+  139  cat 'confidential mission brief.txt' 
+  140  bash checklabnav.sh 5 FLAG{lvl05_quoted_spaces}
+  141  cat '-important.log' 
+  142  cat '-- -important.log' 
+  143  cat -- -important.log'
+  144  cat -- -important.log
+  145  bash checklabnav.sh 6 FLAG{lvl06_hyphen_bypass}
+  146  cat -s spaced_out.txt 
+  147  bash checklabnav.sh 7 FLAG{lvl07_squeeze_spaces}
+  148  cat -n big_inventory.txt
+  149  clear
+  150  cat -n big_inventory.txt | grep 42
+  151  bash checklabnav.sh 8 FLAG{lvl08_line_forty_two}
+  152  ls 
+  153  cat -A tabs_and_returns.bin 
+  154  cat  tabs_and_returns.bin 
+  155  bash checklabnav.sh 9 FLAG{lvl09_invisible_tabs}
+  156  cat shards/part1.txt shards/part2.txt 
+  157  bash checklabnav.sh 10 FLAG{lvl10_concat_pieces_together}
+  158  cd /tmp/
+  159  cd nav_lab/
+  160  cat system/opt/daemon/runtime.conf 
+  161  bash checklabnav.sh 11 FLAG{lvl11_absolute_pathing}
+  162  cd vault\ \(primary\)#1/
+  163  ls
+  164  cd storage/
+  165  ls
+  166  cat passcode.txt 
+  167  cd /tmp/nav_lab/
+  168  ls
+  169  bash checklabnav.sh 12 FLAG{lvl12_escaped_directories}
+  170  cd maze/
+  171  ls -R
+  172  cd ./hall_
+  173  cd ./hall_6/
+  174  ls
+  175  cat token.env 
+  176  cd /tmp/nav_lab/
+  177  bash checklabnav.sh 13 FLAG{lvl13_needle_in_maze}
+  178  cat shortcut.lnk 
+  179  bash checklabnav.sh 14 FLAG{lvl14_symlink_followed}
+  180  cat dump.001 
+  181  bash checklabnav.sh 15 FLAG{lvl15_raw_dump_read}
+  182  cd a/b/c/d/e/f/g/
+  183  ls
+  184  cat bottom.txt 
+  185  cd /tmp/nav_lab/
+  186  bash checklabnav.sh 16 FLAG{lvl16_deep_dive_explorer}
+  187  cat colored.txt 
+  188  cat -v colored.txt 
+  189  bash checklabnav.sh 17 FLAG{lvl18_ansi_color_wrapped}
+  190  bash checklabnav.sh 18 FLAG{lvl18_ansi_color_wrapped}
+  191  cat redirect_challenge/a.txt redirect_challenge/b.txt 
+  192  bash checklabnav.sh 17 alpha
+  193  beta
+  194  bash checklabnav.sh 17 alpha beta
+  195  bash checklabnav.sh 17 (alpha beta)
+  196  cd casing/
+  197  ls
+  198  cat FLAG.txt flag.txt flag.txt 
+  199  cd ..
+  200  bash checklabnav.sh 
+  201  bash checklabnav.sh  19 FLAG{lvl19_case_sensitivity}
+  202  cd final_stand/
+  203  ls --l
+  204  ls
+  205  ls -l
+  206  cat file_13.bin 
+  207  cd ..
+  208  bash checklabnav.sh 20 FLAG{lvl20_master_navigator}
+  209  echo alpha beta
+  210  lock
+  211  cd
+  212  lockl
+  213  lock
+  214  ls
+  215  mkdir CTF
+  216  mv labnav.sh CTF/
+  217  ls
+  218  cd CTF/
+  219  ls
+  220  nano labnav.sh 
+  221  cd /tmp/
+  222  cd nav_lab/
+  223  mv checklabnav.sh /home/ruby/CTF/
+  224  cd 
+  225  cd CTF/
+  226  ls
+  227  nano checklabnav.sh 
+  228  bash checklabnav.sh 17 FLAG{alpha_beta}
+  229  nano checklabnav.sh 
+  230  bash checklabnav.sh 17 FLAG{alpha beta}
+  231  nano checklabnav.sh 
+  232  bash checklabnav.sh 17 FLAG{alpha_beta}
+  233  bash checklabnav.sh 17 FLAG{alpha beta}
+  234  bash checklabnav.sh 17 FLAG{alpha_beta}
+  235  cd /tmp/nav_lab/
+  236  ls 
+  237  cat redirect_challenge/a.txt redirect_challenge/b.txt 
+  238  echo "alpha_" > redirect_challenge/a.txt 
+  239  cat redirect_challenge/a.txt redirect_challenge/b.txt 
+  240  cd
+  241  bash checklabnav.sh 17 FLAG{alpha_beta}
+  242  cd CTF/
+  243  bash checklabnav.sh 17 FLAG{alpha_beta}
+  244  mkdir my-repo
+  245  ls
+  246  mv my-repo/ /home/ruby/
+  247  cd
+  248  ls
+  249  cd my-repo/
+  250  git init
+  251  sudo apt install git -y
+  252  git init
+  253  git config user.name "Ruru"
+  254  git config user.email "ruby.reyes@st.metrotech.edu"
+  255  echo "# My Repo" > README.md
+  256  git add README.md
+  257  git commit -m "Initial commit"
+  258  git config user.name "RubiDubi101"
+  259  git config user.email "ruby.reyes@st.metrotech.edu"
+  260  echo "# My Repo" > README.md
+  261  git add README.md
+  262  git commit -m "Initial commit"
+  263  ls
+  264  cat README.md 
+  265  git add README.md 
+  266  ls
+  267  git commit -m "Initial Commit"
+  268  cd ..
+  269  ls
+  270  rm -rf my-repo/
+  271  ls
+  272  shutdown now
+  273  ssh-keygen -t ed25519 -C ruby.reyes@st.metrotech.edu
+  274  mkdir my-repo
+  275  cd my-repo/
+  276  git init 
+  277  git config user.name "RubiDubi101"
+  278  git config user.email "ruby.reyes@st.metrotech.edu
+  279  git config user.email "ruby.reyes@st.metrotech.edu"
+  280  echo ":) Smile! #My Repo" > README.md
+  281  git add README.md 
+  282  git commit -m "Initial commit" 
+  283  git branch -M main
+  284  git remote add origin https://github.com/RubiDubi101/my-repo.git
+  285  git push -u origin main 
+  286  clear
+  287  git push -u origin main 
+  288  git status 
+  289  git push -u origin main 
+  290  ls ~/.ssh/
+  291  cat ~/.ssh/id_ed25519 
+  292  cat ~/.ssh/id_ed25519.pub 
+  293  git push -u origin main 
+  294  eval "$(ssh-agent -s)" ssh-add ~/.ssh/id_ed25519
+  295  ssh-add -l \
+  296  ssh-add -l 
+  297  sudo apt install xclip 
+  298  xclip -sel clip >
+  299  xclip -sel clip < ~/.ssh/id_ed25519.pub 
+  300  nano 
+  301  ssh -T git@github.com
+  302  echo "# MY_REPO-" >> README.md
+  303  git init
+  304  git add README.md
+  305  git commit -m "first commit"
+  306  git branch -M main
+  307  git remote add origin https://github.com/RubiDubi101/MY_REPO-.git
+  308  git push -u origin main
+  309  echo "# MY_REPO-" >> README.md
+  310  git init
+  311  git add README.md
+  312  git commit -m "first commit"
+  313  git branch -M main
+  314  git remote add origin https://github.com/RubiDubi101/MY_REPO-.git
+  315  git push -u origin main
+  316  git remote add origin https://github.com/RubiDubi101/MY_REPO-.git
+  317  git branch -M main
+  318  git push -u origin main
+  319  clear
+  320  cd
+  321  ls
+  322  cd my-repo/
+  323  ls
+  324  cat README.md 
+  325  git init 
+  326  git add README.md 
+  327  git commit -m "FIRST COMMIT"
+  328  ls
+  329  cat README.md 
+  330  clear
+  331  history 
+  332  git push -u origin main
+  333  git remote -v
+  334  git remote set-url git@github.com:RubiDubi101/MY_REPO-.git
+  335  git remote -v
+  336  git remote set-url origin git@github.com:RubiDubi101/MY_REPO-.git
+  337  git remote -v
+  338  git push -u origin main
+  339  curl
+  340  curl cheat.sh/git
+  341  curl cheat.sh/git > gitcheet.txt
+  342  ls
+  343  git add .
+  344  git commit -m "cheat"
+  345  git push -u origin main
+  346  ls
+  347  cat gitcheet.txt 
+  348  nano gitcheet.txt 
+  349  history > history.txt
