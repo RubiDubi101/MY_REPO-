@@ -1,3 +1,1 @@
-:) Smile! #My Repo
-# MY_REPO-
-# MY_REPO-
+This is a test repo! :P
