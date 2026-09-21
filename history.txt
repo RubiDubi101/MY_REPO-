@@ -347,3 +347,163 @@
   347  cat gitcheet.txt 
   348  nano gitcheet.txt 
   349  history > history.txt
+  350  git add .
+  351  git commit "history add"
+  352  git commit -m "history add"
+  353  git push -u origin main
+  354  git branch -M main 
+  355  shutdown now
+  356  xs
+  357  cd
+  358  shutdown now
+  359  ls
+  360  ./total_net.sh 
+  361  sudo ./total_net.sh 
+  362  cd Downloads/
+  363  chmod +x blackout.sh 
+  364  ./blackout.sh 
+  365  sudo ./blackout.sh 
+  366  link
+  367  iplink 
+  368  ip link 
+  369  ip link --help
+  370  ip link help
+  371  ip link set enp0s3 up 
+  372  sudo ip link set enp0s3 up 
+  373  ls
+  374  ip link set arp on 
+  375  sudo ip link set arp on 
+  376  sudo ip link set enp0s3 arp on 
+  377  cat /etc/resolv.conf \
+  378  cat /etc/resolv.conf 
+  379  echo "nameserver 1.1.1.1" > /etc/resolv.conf 
+  380  sudo echo "nameserver 1.1.1.1" > /etc/resolv.conf 
+  381  cat /etc/resolv.conf 
+  382  nano /etc/resolv.conf 
+  383  sudo nano /etc/resolv.conf 
+  384  clear
+  385  ip link help
+  386  ip link \
+  387  ip link 
+  388  lsusb
+  389  clear arp 
+  390  clear
+  391  ip link 
+  392  ip table help 
+  393  ip help 
+  394  iptables 
+  395  iptables --help 
+  396  iptables --list
+  397  sudo iptables --list
+  398  sudo iptables --delete INPUT -j DROP 
+  399  sudo iptables -D  INPUT -j DROP 
+  400  sudo iptables -D  INPUT -s -j DROP 
+  401  sudo iptables -D INPUT -j DROP
+  402  clear
+  403  iptables --list
+  404  sudo iptables --list
+  405  sudo iptables -F 
+  406  sudo iptables --list
+  407  nano test_script.sh
+  408  sudo iptables --list
+  409  sudo iptables -P INPUT -j ACCEPT
+  410  sudo iptables -L 
+  411  ping 8.8.8.8
+  412  ping -n 2 8.8.8.8
+  413  clear
+  414  sudo iptables -L
+  415  sudo iptables -D INPUT -j DROP 
+  416  sudo iptables -D INPUT 1
+  417  sudo iptables -L --line-numbers
+  418  sudo iptables -D INPUT 3
+  419  sudo iptables -D OUTPUT `
+  420  sudo iptables -D OUTPUT 1
+  421  sudo iptables -L --line-numbers -n
+  422  sudo iptables -nL INPUT --line-numbers 
+  423  sudo iptables -D INPUT
+  424  clear
+  425  ip route showdump 
+  426  ip route show
+  427  sudo ip route del blackhole 
+  428  sudo ip route del blackhole dev enp0s3 
+  429  sudo ip route --help
+  430  sudo ip route help
+  431  sudo ip route del blackhole default
+  432  ip route show
+  433  clear
+  434  ip link 
+  435  ip route show
+  436  sudo ip route del blackhole 1.1.1.1
+  437  sudo ip route del blackhole *.*.*.*
+  438  sudo ip route del blackhole 8.8.8.8
+  439  sudo ip route del blackhole 9.9.9.9
+  440  sudo ip route del blackhole 127.0.0.0/8
+  441  ip route show default
+  442  cat /etc/resolv.conf 
+  443  sudo ip route add default via 1.1.1.1 dev enp0s3 
+  444  sudo ip route add default via 192.168.0.1  dev enp0s3 
+  445  ip
+  446  ip addr
+  447  sudo ip route add default via 10.0.2.15  dev enp0s3 
+  448  clear
+  449  sudo iptables -P INPUT -j ACCEPT 
+  450  sudo iptables -P INPUT  ACCEPT 
+  451  sudo iptables -P OUTPUT  ACCEPT 
+  452  sudo iptables -P FORWARD  ACCEPT 
+  453  iptables --list
+  454  sudo iptables --list
+  455  systemctl restart systemd-resolved
+  456  ip link show 
+  457  ip link set lo up 
+  458  sudo ip link set lo up 
+  459  ip link set lo up 
+  460  ip link show 
+  461  ip route show
+  462  iptables --list 
+  463  sudo iptables --list 
+  464  systemctl status named
+  465  nano /etc/resolv.conf 
+  466  sudo systemctl reload 
+  467  sudo systemctl restart systemd-resolved
+  468  ping -n 2 8.8.8.8
+  469  sudo ping -n 2 8.8.8.8
+  470  sudo ping -R 8.8.8.8
+  471  sudo ip link set lo mtu 5000
+  472  sudo ip link set lo arp on 
+  473  sudo ip link set enp0s3 arp  on 
+  474  sudo su
+  475  ls
+  476  cd ..
+  477  cd /var/net_kill_state/
+  478  ls
+  479  chmod +x resolv.conf.bak 
+  480  sudo !
+  481  cat resolv.conf.bak 
+  482  sudo nano  resolv.conf.bak 
+  483  cat recovery.env 
+  484  cd 
+  485  ls
+  486  ip neigh flush all
+  487  sudo ip neigh flush all
+  488  ip link set enp0s3 arp on 
+  489  sudo ip link set enp0s3 arp on 
+  490  ip link show 
+  491  ip link set enp0s3 mtu 5000
+  492  sudo ip link set enp0s3 mtu 5000
+  493  systemctl start systemd-resolved
+  494  sudo systemctl start NetworkManager
+  495  sudo systemctl start networking
+  496  sudo systemctl restart NetworkManager
+  497  sudo systemctl restart systemd-networkd 
+  498  sudo resolvectl statistics 
+  499  ping 8.8.8.8
+  500  ping -r 8.8.8.8
+  501  cat /etc/resolv.conf 
+  502  sudo nano /etc/resolv.conf 
+  503  ping 8.8.8.8
+  504  ip link show 
+  505  ip addr show 
+  506  shutdown now
+  507  history 
+  508  cd my-repo/
+  509  history > history.txt 
